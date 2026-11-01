@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Mystery | Task 1</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-mode="task1">
+  <div class="page">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">WEB TECHNOLOGIES · ASSIGNMENT 06</p>
+        <h1>Birthday Mystery <span class="title-spark">✦</span></h1>
+        <p class="subtitle">A party, four rooms, and one missing cake.</p>
+      </div>
+      <nav class="mode-nav" aria-label="Task pages">
+        <a class="current" href="../task1/index.html">Task 1 · Detective</a>
+        <a href="../task2/index.html">Task 2 · Motion</a>
+      </nav>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-kicker">20 QUESTIONS</div>
+          <h2>Detective cases</h2>
+          <p>Select any case to search the page with jQuery.</p>
+        </div>
+        <div id="caseButtons" class="case-buttons"></div>
+        <button id="clearButton" type="button" class="clear-btn">↺ Clear highlighting</button>
+      </aside>
+      <main class="main-content">
+        <div class="case-result" id="caseResult" aria-live="polite">
+          <div class="result-icon">⌕</div>
+          <div><div class="result-label">INVESTIGATION BOARD</div><strong id="resultTitle">Choose a case to begin</strong><p id="resultText">All guests are at the party.</p></div>
+          <span class="count-pill" id="resultCount">21 guests</span>
+        </div>
+        <section class="house" aria-label="Birthday party house">
+          <div class="roof"><div class="roof-label">THE PARTY <span>19:30 — 22:30</span></div></div>
+          <div class="house-content">
+            <div class="floor-heading">FLOOR 2 <span>UPSTAIRS</span></div>
+            <div class="floor-grid" id="floor2"></div>
+            <div class="floor-heading downstairs">FLOOR 1 <span>DOWNSTAIRS</span></div>
+            <div class="floor-grid" id="floor1"></div>
+          </div>
+        </section>
+        <div class="legend">
+          <span><b class="legend-dot" style="background:#d64f5c"></b><b class="legend-dot" style="background:#5d8be8"></b><b class="legend-dot" style="background:#38a27d"></b><b class="legend-dot" style="background:#333a4d"></b><b class="legend-dot" style="background:#e5aa35"></b><b class="legend-dot" style="background:#9f67ce"></b> Clothes</span>
+          <span>📱 Phone</span><span>👓 Glasses</span><span>👜 Bag</span><span>☕ Cup</span><span>🍰 Crumbs</span><span><b class="legend-aitu">A</b> AITU</span>
+        </div>
+        <footer>Created for Assignment 6 · jQuery selectors, traversal and effects</footer>
+      </main>
+    </div>
+  </div>
+  <div id="modalOverlay" class="modal-overlay"><div id="guestModal" class="guest-modal"></div></div>
+  <script src="../assets/jquery.min.js"></script>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
